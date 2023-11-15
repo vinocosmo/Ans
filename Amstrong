@@ -1,0 +1,19 @@
+var number=parseInt(number);
+var l=number.toString().length;
+var temp=number;
+var p=0;
+while(number>0)
+{
+    let rem=number%10;
+    p+=Math.pow(rem,l);
+    number=Math.floor(number/10);
+    
+}
+if(temp===p)
+{
+    console.log(`${temp} is an Armstrong number`)
+}
+else
+{
+    console.log(`${temp} is not an Armstrong number.`)
+}
